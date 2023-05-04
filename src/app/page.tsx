@@ -1,5 +1,4 @@
 import Card from "@/components/Card";
-import Frame from "@/components/Frame";
 import Overview from "@/components/Overview";
 import Link from "next/link";
 

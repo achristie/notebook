@@ -6,11 +6,11 @@ interface FrameProps {
 }
 
 export default function Frame({ name }: FrameProps) {
-  const frame = useRef<HTMLIFrameElement>();
+  const frame = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState<string>();
 
   const onLoad = () => {
-    setHeight(frame.current.contentWindow.document.body.scrollHeight + "px");
+    setHeight(frame.current?.contentWindow?.document.body.scrollHeight + "px");
   };
 
   return (

@@ -2,7 +2,6 @@ import Image from "next/image";
 interface CardProps {
   title: string;
   blurb: string;
-  imageUrl: string;
 }
 export default function Card({ title, blurb }: CardProps) {
   return (
