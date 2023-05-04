@@ -4,7 +4,7 @@ import Overview from "@/components/Overview";
 import Nav from "@/components/nav";
 import Link from "next/link";
 
-const notebooks = ["eWindow", "MarketData", "ForwardCurves", "bakerhughes"];
+const notebooks = ["eWindow", "marketdata", "forwardCurves", "bakerhughes"];
 
 export default function Home() {
   return (
