@@ -20,6 +20,7 @@ export default function Overview() {
       </div>
       <div>
         <h2 className="text-lg font-bold">Notable Features</h2>
+      <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700"/>
         <ul className="space-y-1 text-gray-500 list-item">
           <li>Handles authentication</li>
           <li>Returns data as a DataFrame</li>
