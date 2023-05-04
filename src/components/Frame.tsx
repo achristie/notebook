@@ -7,7 +7,7 @@ interface FrameProps {
 
 export default function Frame({ name }: FrameProps) {
   const frame = useRef<HTMLIFrameElement>(null);
-  const [height, setHeight] = useState<string>();
+  const [height, setHeight] = useState<string>("800px");
 
   const onLoad = () => {
     setHeight(frame.current?.contentWindow?.document.body.scrollHeight + "px");
@@ -24,29 +24,3 @@ export default function Frame({ name }: FrameProps) {
     ></iframe>
   );
 }
-// const [frameHeight , setFrameHeight] = useState()
-
-//      function FrameWrapper() {
-//       const ref = React.useRef();
-//       const [height, setHeight] = React.useState("0px");
-//       const onLoad = () => {
-//         setHeight(ref.current.contentWindow.document.body.scrollHeight + "px");
-//       };
-//       return (
-//         <iframe
-//           ref={ref}
-//           onLoad={onLoad}
-//           id="myFrame"
-//           src="http://demo_iframe.htm"
-//           width="100%"
-//           height={height}
-//           scrolling="no"
-//           frameBorder="0"
-//           style={{
-//             maxWidth: 640,
-//             width: "100%",
-//             overflow: "auto",
-//           }}
-//         ></iframe>
-//       );
-//     }
