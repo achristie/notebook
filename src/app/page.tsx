@@ -13,8 +13,8 @@ export default function Home() {
       <div className="columns-3 gap-x-8">
         {notebooks.map((nb) => (
           <div className="w-full">
-            <Link href={`/notebooks/${nb}`}>
-              <Card title={nb} key={nb} blurb={"temp"} />
+            <Link key={nb} href={`/notebooks/${nb}`}>
+              <Card title={nb} blurb={"temp"} />
             </Link>
           </div>
         ))}
