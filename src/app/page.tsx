@@ -11,8 +11,8 @@ export default function Home() {
       <h1>Sample Notebooks</h1>
       <div className="columns-3 gap-x-8">
         {notebooks.map((nb) => (
-          <div className="w-full">
-            <Link key={nb} href={`/notebooks/${nb}`}>
+          <div key={nb} className="w-full">
+            <Link href={`/notebooks/${nb}`}>
               <Card title={nb} blurb={"temp"} />
             </Link>
           </div>
