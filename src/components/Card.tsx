@@ -1,20 +1,33 @@
 import Image from "next/image";
+import IconOpenOutline from "./IconOpenOutline";
+import { motion } from "framer-motion";
+
 interface CardProps {
   title: string;
   name: string;
 }
 export default function Card({ title, name }: CardProps) {
   return (
-    <div className="h-64 rounded-lg shadow-lg flex flex-col">
-      <h1 className="text-xl h-8 px-4 font-bold text-indigo-800 bg-gray-100 ">{title}</h1>
-      <div className="relative h-56 w-full">
+    <div className="h-72 rounded-lg shadow-lg flex flex-col align-middle transform transition duration-500 hover:scale-110">
+      <div className="relative h-60 w-full">
         <Image
-          style={{ objectFit: "none", objectPosition: "0% 50%" }}
+          style={{ objectFit: "cover", objectPosition: "0% 50%" }}
           src={`/${name}.png`}
           // unoptimized={true}
           alt={title}
           fill
+          className="rounded-t-lg"
         />
+      </div>
+      <div className="text-md px-8 h-12 font-semibold flex items-center text-sky-700">
+        <p className="flex-grow">{title}</p>
+        <a
+          href={`/notebooks/${name}`}
+          target="_blank"
+          className="hover:text-red-600 hover:font-bold"
+        >
+          <IconOpenOutline />
+        </a>
       </div>
     </div>
   );
