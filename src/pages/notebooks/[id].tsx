@@ -15,7 +15,7 @@ export default function Page() {
     <div className="container mx-auto">
       <Nav />
       <div className="flex flex-row justify-between mx-6">
-        <motion.h1 className="text-red-300 text-4xl font-bold">{id}</motion.h1>
+        <h1 className="text-red-300 text-4xl font-bold">{id}</h1>
         <div className="flex gap-8 items-center">
           <a href="" rel="nofollow">
             <img
