@@ -1,6 +1,5 @@
 import Image from "next/image";
 import IconOpenOutline from "./IconOpenOutline";
-import { motion } from "framer-motion";
 
 interface CardProps {
   title: string;
