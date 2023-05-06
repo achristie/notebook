@@ -21,13 +21,13 @@ export default function Card({ title, name }: CardProps) {
       </div>
       <div className="text-md px-8 h-12 font-semibold flex items-center text-sky-700">
         <p className="flex-grow">{title}</p>
-        <a
-          href={`/notebooks/${name}`}
-          target="_blank"
+        <p
+          // href={`/notebooks/${name}`}
+          // target="_blank"
           className="hover:text-red-600 hover:font-bold"
         >
           <IconOpenOutline />
-        </a>
+        </p>
       </div>
     </div>
   );

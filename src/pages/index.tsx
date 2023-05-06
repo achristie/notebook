@@ -20,6 +20,10 @@ const notebooks = [
     name: "bakerhughes",
     display: "Baker Hughes Oil Rig Count",
   },
+  {
+    name: "databasing",
+    display: "Save to Database",
+  },
 ];
 
 export default function Home() {
