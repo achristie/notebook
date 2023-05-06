@@ -2,7 +2,6 @@ import Frame from "@/components/Frame";
 import Nav from "@/components/nav";
 import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
-import { motion } from "framer-motion";
 
 interface UrlQuery extends ParsedUrlQuery {
   id: string;
