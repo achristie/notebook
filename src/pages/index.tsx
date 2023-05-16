@@ -24,6 +24,10 @@ const notebooks = [
     name: "databasing",
     display: "Save to Database",
   },
+  {
+    name: "eu_electricity",
+    display: "EU Electricity",
+  },
 ];
 
 export default function Home() {
