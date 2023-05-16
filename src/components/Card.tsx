@@ -8,11 +8,11 @@ interface CardProps {
 export default function Card({ title, name }: CardProps) {
   return (
     <div className="h-72 rounded-lg shadow-lg flex flex-col align-middle transform transition duration-500 hover:scale-110">
-      <div className="relative h-60 w-full">
+      <div className="relative h-60 w-full overflow-hidden">
         <Image
-          style={{ objectFit: "cover", objectPosition: "0% 50%" }}
+          style={{ objectFit: "cover", objectPosition: "0% 50%", transform: "scale(2.25)", transformOrigin: "0 0" }}
           src={`/${name}.png`}
-          // unoptimized={true}
+          unoptimized
           alt={title}
           fill
           className="rounded-t-lg"
